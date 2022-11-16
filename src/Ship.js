@@ -1,8 +1,14 @@
-function Ship(startingPort) {
-    this.startingPort = startingPort;
-}
+class Ship {
+    constructor(port) {
+        this.currentPort = port;
+      }
+      setSail() {
+        return (this.currentPort = null);
+      }
+      dock(port) {
+        this.currentPort = port;
+      }
+    }
 
-Ship.prototype.setSail = function (){
-    this.startingPort = false;
-};
+
 module.exports = Ship;
