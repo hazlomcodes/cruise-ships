@@ -12,7 +12,7 @@ describe("Port", () => {
         beforeEach(() => {
 
           port = new Port("Dover");
-          titanic = {};
+          titanic = jest.fn();
         
         });
 
@@ -38,11 +38,12 @@ describe("Port", () => {
 
         it("can remove a ship", () => {
             
-            const queenMary = {};
+            const queenMary = (jest.fn)
 
             port.addShip(titanic);
             port.addShip(queenMary);
             port.removeShip(queenMary);
+        
         });
 
     });
