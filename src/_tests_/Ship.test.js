@@ -1,6 +1,7 @@
 const Ship = require("../Ship.js");
 
 describe("Ship", () => {
+    
     it("can be instantiated", () => {
         expect(new Ship()).toBeInstanceOf(Object);
     });
@@ -9,5 +10,13 @@ describe("Ship", () => {
         const ship = new Ship("Dover");
 
         expect(ship.startingPort).toEqual("Dover");
+    });
+
+    it("can set sail", () => {
+        const ship = new Ship("Dover");
+
+        ship.setSail();
+
+        expect(ship.startingPort). toBeFalsy();
     });
 });
