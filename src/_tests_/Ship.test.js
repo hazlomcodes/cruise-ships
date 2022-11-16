@@ -1,5 +1,6 @@
-const Ship = require("../Ship.js");
+const Ship = require("../Ship.js")
 const Port = require("../Port.js")
+const Itinerary = require ("../Itinerary.js")
 
 describe("Ship", () => {
     
